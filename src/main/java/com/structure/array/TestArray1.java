@@ -1,7 +1,7 @@
 package com.structure.array;
 
 /**
- * Created by hadoop on 2019/2/22.
+ * 有序数组
  */
 public class TestArray1 {
     public static void main(String[] args){
@@ -23,5 +23,31 @@ public class TestArray1 {
         arr2[1] = 12;
         System.out.println(arr2[1]);
 
+        TestArray2 t2 = new TestArray2();
+        t2.insert("aa");
+        t2.insert("bb");
+        t2.insert("cc");
+        t2.insert("dd");
+        t2.insert("ee");
+        t2.insert("ff");
+        t2.display();
+        System.out.println(t2.search("aa"));
+        System.out.println(t2.get(2));
+        t2.delete(3);
+        t2.display();
+        t2.update(4,"newff");
+        t2.display();
+
+        TestOrderArray to = new TestOrderArray();
+        to.insert(23);
+        to.insert(1);
+        to.insert(29);
+        to.insert(26);
+        to.insert(13);
+        to.insert(19);
+        to.insert(9);
+        to.insert(16);
+        to.display();
+        System.out.println(to.binarySearch(13));
     }
 }

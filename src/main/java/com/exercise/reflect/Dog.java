@@ -6,6 +6,13 @@ package com.exercise.reflect;
 public class Dog {
     private String name;
     private int age;
+    public String color;
+
+    public Dog(String name, int age, String color) {
+        this.name = name;
+        this.age = age;
+        this.color = color;
+    }
 
     public Dog() {
     }
@@ -29,5 +36,13 @@ public class Dog {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 }
